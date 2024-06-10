@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* ドロップダウンメニューの基本スタイル */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* ドロップダウンリンクのスタイル */
+.dropdown a {
+  text-decoration: none;
+  color: #888;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* ドロップダウンリンクにホバーエフェクトを追加 */
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* ドロップダウンメニューの中のドロップダウンコンテンツ */
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* ドロップダウンメニューにマウスを乗せるとドロップダウンコンテンツが表示 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ドロップダウンコンテンツ内のアイテムのスタイル */
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  display: block; /* ブロック要素として表示 */
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* ドロップダウンコンテンツ内のアイテムにホバーエフェクトを追加 */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* スタイルのリセット */
+body, h1, p, form, input, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* ボディのスタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+/* リンクのスタイル */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* メニューバーのスタイル */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* テキストを中央に配置 */
+  background-color: #333; /* バックグラウンドカラーを適宜変更 */
+}
+
+li {
+  display: inline-block; /* リストアイテムを横に並べる */
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555; /* ホバー時の背景カラーを適宜変更 */
+}
+
+/* 掲示板一覧の文字の背景 */
+.post-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4; /* 全体の背景色 */
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.post p {
+  background-color: #e6e6e6; /* 各項目の背景色 */
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.post p:nth-child(odd) {
+  background-color: #e6e6e6; /* 奇数行の背景色 */
+}
+
+

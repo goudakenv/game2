@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* スタイルのリセット */
+body, h1, p, form, input, a {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f5f5f5;
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	color: #333;
+}
+
+form {
+	margin-top: 20px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+input {
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type="submit"] {
+	background-color: #4caf50;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+input[type="password"] {
+	/* パスワードフィールドのスタイル */
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+a {
+	text-decoration: none;
+	color: #007bff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* メニューバーのスタイル */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center; /* テキストを中央に配置 */
+	background-color: #333; /* バックグラウンドカラーを適宜変更 */
+}
+
+li {
+	display: inline-block; /* リストアイテムを横に並べる */
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #555; /* ホバー時の背景カラーを適宜変更 */
+}
+
+/* 掲示板一覧の文字の背景 */
+.post-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.post {
+	display: flex;
+	flex-direction: column;
+	background-color: #f4f4f4; /* 全体の背景色 */
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.post p {
+	background-color: #e6e6e6; /* 各項目の背景色 */
+	margin: 5px 0;
+	padding: 5px;
+}
+
+.post p:nth-child(odd) {
+	background-color: #e6e6e6; /* 奇数行の背景色 */
+}
+
+/* Canvasのスタイル */
+#main {
+    display: block;
+    margin: 0 auto; /* 左右のマージンを自動で調整して中央に配置 */
+    background-color: #fff; /* Canvasの背景色を適宜変更 */
+    border: 1px solid #ccc; /* Canvasにボーダーを追加する場合は適宜設定 */
+}
+
+/* 必要に応じてCanvasのサイズを指定 */
+#main {
+    width: 400px; /* 例: 幅を400pxに指定 */
+    height: 300px; /* 例: 高さを300pxに指定 */
+}
+/* アニメーション用のCSS */
+/* #movingImageContainer {
+	position: relative;
+	height: 300px; 画像の高さ + 上下の余白
+}
+
+#movingImage {
+	position: absolute;
+	top: 0;
+} */
+/* 既存の style.css ファイルにこれを追加するか、新しいファイルを作成します */
+
+/* .moving-image { */
+/*   animation: moveLeftAndRight 2s linear infinite alternate; */
+/* } */
+
+/* @keyframes moveLeftAndRight { */
+/*   0% { */
+/*     transform: translateX(0); */
+/*   } */
+/*   100% { */
+/*     transform: translateX(50px); 画像が移動する距離を調整できます */
+/*   } */
+/* } */
